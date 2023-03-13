@@ -1,0 +1,105 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #f3f1db;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18pt;
+	font-weight: 300;
+	color: #000000
+}
+
+h1 {
+    max-width: 500px;
+    margin: 20px auto;
+
+}
+
+.memes {
+    max-width: 500px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.memes:hover .meme_title:after {
+    display: block;
+}
+
+.memes:hover .meme_title {
+    color: rgb(0, 0, 0);
+    display: block;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: background .2s
+    ease-out;
+}
+
+.meme_box {
+    border-top: 1px solid ;
+    margin-bottom: 5px;
+}
+
+.meme_box:hover .pointer {
+    transition: 0.5s;
+    justify-self: end;
+    max-width: 3rem;
+}
+
+
+.meme_title {
+    color: rgb(45, 45, 221);
+    display: block;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: background .2s
+    ease-out;
+}
+
+.meme_title:hover {
+    color: rgb(0, 0, 0);
+    display: block;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: background .2s
+    ease-out;
+}
+
+.meme_title:after {
+    content: "";
+    display: none;
+    border-style: solid;
+    border-width: 6px 10px 0 10px;
+    border-color: #000000 transparent transparent transparent;
+    position:absolute;
+}
+
+.meme_input {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    position:absolute;
+}
+
+
+.meme_input:checked + .meme_photo {
+    display: block;
+}
+
+.meme_input:hover + .meme_photo {
+    display:block;
+    transition: 1s
+    ease-out;
+}
+
+.meme_photo {
+    display: none;
+    width: 100%;
+    position:center;
+    padding: 10px 0px;
+    
+}
